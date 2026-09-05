@@ -6,4 +6,4 @@ The "old_files" folder contains outdated versions of the R scripts and xlsx tabl
 
 The "supporting_information" folder contains PNG images and a PDF file with supplementary information about the manuscript.
 
-The "table_alldata_2026.xlsx" file is an xlsx table with all the data extracted, including estimated and converted values ​​relative to each reviewed article in our manuscript.
+The "table_alldata_2026.xlsx" file is the final xlsx table with all the data extracted, including estimated and converted values ​​relative to each reviewed article in our manuscript.
