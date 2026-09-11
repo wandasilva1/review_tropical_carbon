@@ -120,8 +120,8 @@ write.xlsx(det_lmm2,
     stat_smooth(method = "lm",
                 se = TRUE,
                 color = "black") +
-    labs(x = "Log density of human population (inh km-²)", 
-         y = "Log carbon storage (Mg C ha-¹)",
+    labs(x = expression("Log density of human population (inh km"^-2*")"), 
+         y = expression("Log carbon storage (Mg C ha"^-1*")"),
          title = "(a)",
          subtitle = "(p = 0.002)" ) +
     geom_point(size = 3, shape = 21, fill = "black", color = "black", alpha = 0.7) +
@@ -143,7 +143,7 @@ write.xlsx(det_lmm2,
                 se = TRUE,
                 color = "black") +
     labs(x = "Log of human population (inh)", 
-         y = "Log of carbon storage (Mg C ha-¹)",
+         y = expression("Log of carbon storage (Mg C ha"^-1*")"),
          title = "(b)",
          subtitle = "(p = 0.01)" ) +
     geom_point(size = 3, shape = 21, fill = "black", color = "black", alpha = 0.7) +
@@ -159,6 +159,8 @@ write.xlsx(det_lmm2,
       axis.ticks = element_line(color = "black"),
       axis.ticks.length = unit(0.15, "cm")
     ))
+
+library(patchwork)
 
 lmm_dp <- lmm2_dens + lmm2_pop
 
